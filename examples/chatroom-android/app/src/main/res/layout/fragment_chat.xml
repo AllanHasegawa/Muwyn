@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/chat_et"
+                style="@style/Base.ThemeOverlay.AppCompat.Dark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/chat_et_hint"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="#baffffff"/>
+
+            <Button
+                android:id="@+id/chat_post_bt"
+                style="@style/Base.ThemeOverlay.AppCompat.Dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_post_bt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chat_pp_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/chat_pp_n_pending_posts"
+                android:textAlignment="textEnd"
+                android:textColor="#baffffff"/>
+
+            <Button
+                android:id="@+id/chat_pp_delete_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_pp_delete"/>
+
+            <Button
+                android:id="@+id/chat_pp_repost_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_pp_repost"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

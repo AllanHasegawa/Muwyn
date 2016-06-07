@@ -1,0 +1,3 @@
+rootProject.name = 'muwyn'
+include 'muwyn-core'
+

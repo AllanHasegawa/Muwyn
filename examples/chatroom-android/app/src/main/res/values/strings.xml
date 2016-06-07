@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Muwyn</string>
+
+    <string name="who_are_you">Who are you?</string>
+    <string name="where_are_you_going">Where are you going?</string>
+
+    <string name="user1">Alice</string>
+    <string name="user2">Bob</string>
+
+    <string name="chat_room1">Canada</string>
+    <string name="chat_room2">Brazil</string>
+
+    <string name="chat_joined">%1$d [%2$s] - Joined</string>
+    <string name="chat_left">%1$d [%2$s] - Left</string>
+    <string name="chat_post">%1$d [%2$s] %3$s</string>
+
+    <string name="chat_post_bt">Post</string>
+    <string name="chat_et_hint">Type something…</string>
+
+    <string name="chat_pp_repost">Re-post</string>
+    <string name="chat_pp_delete">Delete</string>
+    <string name="chat_pp_n_pending_posts">pending posts</string>
+</resources>

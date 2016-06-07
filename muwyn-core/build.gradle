@@ -1,0 +1,35 @@
+group rootProject.group
+version rootProject.version
+
+buildscript {
+    ext.junitVersion = '4.12'
+    ext.kotlinVersion = '1.0.2'
+    ext.akkaVersion = '2.4.6'
+    ext.hamcrestVersion = '1.3'
+    ext.mockitoVersion = '1.10.19'
+    ext.apacheCommonsCollectionsVersion = '4.1'
+    ext.rxjavaVersion = '1.1.5'
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+dependencies {
+    testCompile "junit:junit:$junitVersion"
+    testCompile "com.typesafe.akka:akka-testkit_2.11:$akkaVersion"
+    testCompile "org.hamcrest:hamcrest-all:$hamcrestVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "com.typesafe.akka:akka-actor_2.11:$akkaVersion"
+    compile "org.apache.commons:commons-collections4:$apacheCommonsCollectionsVersion"
+    compile "io.reactivex:rxjava:$rxjavaVersion"
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
