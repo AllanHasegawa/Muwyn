@@ -4,7 +4,7 @@
 
 Muwyn is a **Mu**lti-**w**ay Incremental S**yn**chronization framework.
 
-<img alt="Muwyn" title="Muwyn" src="resources/graphics/readme/readme_muwyn.svg" height="256">
+<img alt="Muwyn" title="Muwyn" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_muwyn.svg" height="256">
 
 A *single-way* synchronization means information goes one way only, e.g. cloud to device (ex: Android Phone).
 A *two-way* synchronization allows for a device not only fetch data from the server, but to also push to it.
@@ -62,7 +62,7 @@ The chatroom resource can accept three actions: Join, Leave, Post. Each action i
 
 Clients can request all the commits on a particular resource. This is useful to reset the state of the client.
 
-<img alt="Get Full" title="Get Full" src="resources/graphics/readme/readme_msgs_get_full.svg" height="100">
+<img alt="Get Full" title="Get Full" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_get_full.svg" height="100">
 
 ##### Alice request:
 
@@ -84,7 +84,7 @@ Clients can request all the commits on a particular resource. This is useful to 
 
 When a client already has some commits, it can request just a partial list of changes.
 
-<img alt="Get Partial" title="Get Partial" src="resources/graphics/readme/readme_msgs_get_partial.svg" height="100">
+<img alt="Get Partial" title="Get Partial" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_get_partial.svg" height="100">
 
 ##### Alice request:
 
@@ -107,7 +107,7 @@ When a client already has some commits, it can request just a partial list of ch
 
 Clients can push commits too!
 
-<img alt="Post" title="Post" src="resources/graphics/readme/readme_msgs_post.svg" height="100">
+<img alt="Post" title="Post" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_post.svg" height="100">
 
 ##### Alice request:
 
@@ -138,7 +138,7 @@ Clients can push commits too!
 
 `OutOfSync` is used to tell the client an error happened when it tried to push commits while not having the latest version.
 
-<img alt="OutOfSync - client behind post" title="OutOfSync - client behind post" src="resources/graphics/readme/readme_msgs_outofsync_client_behind_post.svg" height="100">
+<img alt="OutOfSync - client behind post" title="OutOfSync - client behind post" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_outofsync_client_behind_post.svg" height="100">
 
 ##### Alice request:
 
@@ -170,7 +170,7 @@ It is also a form of protection against malicious apps disguised as a trusted ap
 
 In the following example, the client is trying to `Join` twice in the same chatroom.
 
-<img alt="InvalidState" title="InvalidState" src="resources/graphics/readme/readme_msgs_invalidstate.svg" height="100">
+<img alt="InvalidState" title="InvalidState" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_invalidstate.svg" height="100">
 
 ##### Alice request:
 
@@ -206,7 +206,7 @@ ir order. In this particular example, the client should have sent the message `(
 get an `OutOfSync` message. But, by sending a message ahead and a previous message
 with a wrong `id`, then something is very wrong and causes a `SequenceBroken`.
 
-<img alt="SequenceBroken" title="SequenceBroken" src="resources/graphics/readme/readme_msgs_sequencebroken.svg" height="100">
+<img alt="SequenceBroken" title="SequenceBroken" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_sequencebroken.svg" height="100">
 
 ##### Alice request:
 
@@ -235,7 +235,7 @@ Another response to deal with problematic clients. Since each commit's `id` are 
 and sent by the client, the server needs to validate it. The requirement is that they must be unique
 for each resource.
 
-<img alt="InvalidIncId" title="InvalidIncId" src="resources/graphics/readme/readme_msgs_invalidincid.svg" height="100">
+<img alt="InvalidIncId" title="InvalidIncId" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_msgs_invalidincid.svg" height="100">
 
 ##### Alice request:
 
@@ -268,7 +268,7 @@ Note how Bob try to post a message while being out of sync. The server tells it 
 so he can decides what to do with the incremental change denied. Bob then save it to send
 again later.
 
-<img alt="Muwyn Example" title="Muwyn Example" src="resources/graphics/readme/readme_muwyn_example.svg" width="256">
+<img alt="Muwyn Example" title="Muwyn Example" src="https://cdn.rawgit.com/AranHase/Muwyn/782be8a2ead99644b37f886839b1b99ec2969b49/resources/graphics/readme/readme_muwyn_example.svg" width="256">
 
 ## Incremental changes? Why?
 
